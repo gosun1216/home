@@ -1,0 +1,133 @@
+body {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#outer {
+    width: 500px;
+    height: 100vh;
+    background-color: rgb(21, 193, 21);
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    /* align-items: stretch; */
+
+}
+
+#outer > div {
+    border: 3px dashed black;
+}
+
+.a {
+    height: 20vh;
+}
+
+.b {
+    height: 50vh;
+}
+
+.c {
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.c > div {
+    border: 3px solid blue;
+    width: 95%;
+    height: 45%;
+    display: flex;
+}
+
+.c > div:nth-child(1) {
+    background-image: url(/resources/image/star_01.png);
+}
+
+.c > div:nth-child(2) {
+    background-color: red;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    /* align-items: center; */
+    flex-direction: column;    
+}
+
+.cb > div {
+    background-color: orange;
+    border: 3px solid yellow;
+    height: 30%;
+    text-align: center;
+}
+
+.login-set {
+
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+input:nth-child(1) {
+    font-size: 15px;
+    width: 95%;
+    height: 30px;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+
+}
+input.userpw {
+    font-size: 15px;
+    width: 95%;
+    height: 30px;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 0 0 8px 8px;
+
+}
+
+@keyframes idani {
+    0%{
+        font-size: 100%;
+    }
+    100%{font-size: 80%;}
+}
+input:focus {
+    border-color: green;
+    animation-name: idani;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.login_keep_wrap {
+    position: relative;
+    margin-top: 12px;
+    padding-right: 90px;
+}
+
+.keep-check {
+    position: relative;
+    padding-left: 26px;
+}
+
+
+.keep_check .keep_text {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #767678;
+}
+
+label {
+    cursor: pointer;
+}
+

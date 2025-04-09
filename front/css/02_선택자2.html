@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 (2)</title>
+    <link rel="stylesheet" href="./02_선택자2.css">
+</head>
+<body>
+
+    <h1 id="csv" class="mint">선택자 (2)</h1>
+
+    <!-- 
+        외부 스타일 시트
+        스타일만을 따로 관리하는 .css 확장자를 가지는 외부 문서를 만들고
+        <link> 태그를 통해 연결시켜주는 방법
+    -->
+    
+
+    <!--  
+        기본 선택자 뒤에 []를 사용하여 속성과 속성값을 사용한다.
+    -->
+
+    <div name="n1">div</div>
+    <div name="n2">div</div>
+
+    <!-- 
+        자식 / 후손 선택자
+    -->
+
+    <ul>
+        <li class="apple">사과</li>
+        <li>딸기</li>
+        <li>포도</li>
+    </ul>
+
+    <div class="apple">사과</div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div id="test-children">
+        <span>디브 아래 스팬</span>
+        <strong>디브 아래 스트롱</strong>
+        <ul>
+            <li>디브 아래 유엘 아래 리스트1</li>
+            <li>디브 아래 유엘 아래 리스트2</li>
+            <li>디브 아래 유엘 아래 리스트3</li>
+        </ul>
+    </div>
+
+    <hr>
+
+
+    <!-- LAB004 start! -->
+   <h2>동위 선택자</h2>
+
+   <!-- 동위 관계(같은 레벨)에서 뒤에 위치한 태그를 선택 -->
+
+   <pre>
+    {문법}
+    a 뒤에 있는 b 요소 1개 선택
+        a+b { style }
+    a 뒤에 있는 b 요소 전부 선택
+        a~b { style }
+   </pre>
+
+   <div id="same-level-test">div01</div>
+   <div>div02</div>
+   <div>div03</div>
+   <div>div04</div>
+   <div>div05</div>
+
+   <br>
+   <hr>
+
+   <h2>반응 선택자</h2>
+   <!-- 
+   사용자의 움직임에 따라 선택
+   -->
+
+   <pre>
+        [문법]
+        선택자:active { style }
+        선택자:hover { style }
+   </pre>
+
+   <div id="active-test">active test div01</div>
+   <div id="hover-test">hover test div02</div>
+   
+   <br>
+   <hr>
+
+   <h2>상태 선택자</h2>
+
+   <!-- 
+        상태에 따라 선택됨
+   -->
+
+   <pre>
+        [문법]
+        선택자:상태 { style }
+   </pre>
+
+   <input type="text" id="focus-test">
+   <br>
+   <input type="checkbox" id="check-test">
+
+   <br>
+   <hr>
+
+   <h2>일반 구조 선택자</h2>
+   <!-- 
+        특정 위치에 있는 태그 선택
+   -->
+
+   <div id="test-div">
+        <p>test1</p>
+        <p>test2</p>
+        <p>test3</p>
+        <p>test4</p>
+        <p>test5</p>
+        <pre>test6 (pre)</pre>
+   </div>
+
+   <br>
+   <hr>
+
+   <h2>문자 선택자</h2>
+
+   <!-- 
+        태그 내 특정 조건 문자 선택
+   -->
+
+   <p id="string-test1">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laudantium vitae totam amet porro, illum ea dolorem unde blanditiis, voluptatum explicabo omnis tempore atque assumenda est nisi, ad accusamus optio!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laudantium vitae totam amet porro, illum ea dolorem unde blanditiis, voluptatum explicabo omnis tempore atque assumenda est nisi, ad accusamus optio!
+   </p>
+   <br>
+   <p id="string-test2">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laudantium vitae totam amet porro, illum ea dolorem unde blanditiis, voluptatum explicabo omnis tempore atque assumenda est nisi, ad accusamus optio!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laudantium vitae totam amet porro, illum ea dolorem unde blanditiis, voluptatum explicabo omnis tempore atque assumenda est nisi, ad accusamus optio!
+   </p>
+   <br>
+   <p id="string-test3">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laudantium vitae totam amet porro, illum ea dolorem unde blanditiis, voluptatum explicabo omnis tempore atque assumenda est nisi, ad accusamus optio!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laudantium vitae totam amet porro, illum ea dolorem unde blanditiis, voluptatum explicabo omnis tempore atque assumenda est nisi, ad accusamus optio!
+   </p>
+   <br>
+   <p id="string-test4">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laudantium vitae totam amet porro, illum ea dolorem unde blanditiis, voluptatum explicabo omnis tempore atque assumenda est nisi, ad accusamus optio!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laudantium vitae totam amet porro, illum ea dolorem unde blanditiis, voluptatum explicabo omnis tempore atque assumenda est nisi, ad accusamus optio!
+   </p>
+
+   <br>
+   <hr>
+
+   <h2>부정 선택자</h2>
+
+   <!-- 
+        지금까지의 선택자에 대해 반대로 적용
+   -->
+
+   
+
+</body>
+</html>

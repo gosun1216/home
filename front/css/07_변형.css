@@ -1,0 +1,35 @@
+h1 {
+    background-color: red;
+}
+
+.box {
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    border-radius: 10px;
+
+}
+#test01:hover {
+    /* 위치 지정 */
+    /* transform: translate(100px, 100px); */
+
+    /* 크기비율 지정 */
+    /* transform: scale(1.2); */
+
+    /* 회전 */
+    /* transform: rotate(-45deg); */
+
+    /* 비틀기 */
+    transform: skew(10deg, 10deg);
+}
+
+#test02:hover {
+    /* transform: perspective(300px) translatez(100px); */
+    transform: perspective(300px) rotate3d(0.3,0.5,0.3,-45deg);
+}
+
+#test03:hover {
+    transform: rotateY(180deg);
+    backface-visibility: visible;
+}

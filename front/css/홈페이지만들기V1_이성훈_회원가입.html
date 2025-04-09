@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./홈페이지만들기V1_이성훈_회원가입.css">
+</head>
+<body>
+    <div class="container">
+        <h2>회원가입</h2>
+        <form action="" 
+        method="POST"
+        >
+            <input 
+            type="text" 
+            name="username" 
+            placeholder="ID" 
+            required
+            >
+            <input 
+            type="email" 
+            name="email" 
+            placeholder="exmple@google.com" 
+            required>
+            <input 
+            type="password" 
+            name="password" 
+            placeholder="숫자, 영문, 특수문자 포함 8자 이상" 
+            required>
+            <input type="password" 
+            name="confirm_password" 
+            placeholder="비밀번호 확인" 
+            required
+            > 
+                <div>
+                    <button id="join-in" type="submit">join-in</button>
+                    <button id="join-reset" type="reset">reset</button>
+                </div>
+                <br>
+                <div>
+                    <a href="/css/홈페이지만들기V1_이성훈.html" 
+                    id="join-main-back" 
+                    type="reset"
+                    
+                    >메인 홈으로 이동</a>
+                </div>
+        </form>
+    </div>
+</body>
+</html>
