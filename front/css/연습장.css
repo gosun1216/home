@@ -1,0 +1,289 @@
+body {
+    margin: 0px;
+}
+
+div {
+    box-sizing: border-box;
+    display: block;
+}
+
+span, p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#outer {
+    width: 1fr;
+    height: 1fr;
+    display: grid;
+    grid-template-rows: 0.7fr 0.2fr 10fr 150px 10px; 
+    grid-template-columns: 1fr;
+}
+header {
+    background-color: rgb(21, 21, 21);
+    margin: 0px;
+    width: 1fr;
+    height: 1fr;
+    color: azure;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 4fr 3fr 4fr;
+    grid-template-columns: 1fr 0.1fr 1fr 3.2fr 0.8fr 0.1fr 1fr 0.2fr;
+
+}
+
+.hd-logo {
+    font-weight: bold;
+    color: azure;
+}
+#header-logo {
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: rgb(220, 36, 60);
+    display: grid;
+    grid-row: span 3;
+    /* place-items: center; */
+    place-content: end;
+}
+
+#header-logo-text {
+    margin-left: 5px;
+    margin-bottom: 22px;
+    font-size: px;
+    display: grid;
+    grid-row: span 3;
+    /* place-items: center; */
+    place-content: end start;
+}
+
+#top-signin {
+    display: inline-block;
+    position: absolute;
+    top: 70px;
+    left: 85%;
+    
+}
+
+.sign-in {
+    display: block;
+    font-size: 80px;
+    text-decoration: none;
+    width: 120px;
+    padding: 10px;
+    background-color: rgb(21, 21, 21);
+    color: #b52020;
+    border: 1px solid #b52020;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+}
+
+.sign-in:hover {
+    width: 1fr;
+    height: 1fr;
+    background-color: #b52020;
+    color: #ffffff;
+}
+
+nav {
+    background-color: black;
+    color: snow;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    place-items: center;
+    place-content: center;
+}
+
+
+nav > .menu-name:hover {
+    background-color: #b52020;
+}
+
+nav a {
+    display: grid;
+    color: white;
+    margin: 0 px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: block;
+    width: 1fr;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 160px 8.5fr 200px;
+    grid-template-rows: 1fr;
+}
+
+aside {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    width: 1fr;
+    height: 1fr;
+    border: 2px dashed #333;
+}
+
+#add-connect {
+    font-size: 150px;
+    text-align: center;
+}
+
+article {
+    display: grid;
+
+}
+
+.main-bener {
+    padding-top: 100px;
+    margin-top: 50px;
+    position: static;
+}
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: auto;
+}
+.icon-box {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+    transition: background-color 0.3s;
+    color: #333;
+}
+.icon-box:hover {
+    background-color: #b6b6b6;
+}
+i {
+    font-size: 36px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #4f4f4f;
+    text-align: center;
+}
+
+h3 {
+    color: #4f4f4f;
+    text-align: center;
+}
+
+#spot-point {
+    color: #333;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+#works-p {
+    font-size: 20px;
+    font-family: "굴림체";
+    font-weight:bold;
+    text-align: center;
+    line-height: 50px;
+    color: #333;
+}
+
+.works-movie-2020 {
+    text-decoration: none;
+    color: #333;
+}
+.works-cf {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+}
+
+
+td.num_01 {
+    text-align: center;
+}
+
+.nfl_01 {
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+}
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+th, td {
+    font-size: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+th {
+    background-color: #f4f4f4;
+}
+
+#list-style-par {
+    height: 600px;
+    overflow: scroll;
+    list-style-type: lower-alpha;
+}
+
+.netflix-con {
+    margin: 16px 40px;
+}
+
+section {
+    margin: 16px 40px;
+    display: grid;
+    width: 100%;
+    height: 1000px;
+    place-content: center;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(4, 1fr 30px);
+    column-gap: 10px;
+    row-gap: 5px;
+    background-color: white;
+}
+
+section > div {
+    border-radius: 3px;
+    background-color: gray;
+    
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #333;
+    color: white;
+    padding : 20px;
+    margin-bottom: 0px;
+}
+.footer {
+    text-align: center;
+}
+
+#scroll-end {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    background-color: #b52020;
+}

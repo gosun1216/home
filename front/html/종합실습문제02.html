@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>통합실습문제 02</title>
+</head>
+<body>
+    
+<h1>주문관리</h1>
+
+    <fieldset>
+        <legend>주문자 정보</legend>
+
+        <ol>
+            <li>
+                <span>
+                    
+                    <form action="">
+                        <span>주문자명 : </span>
+                        <input 
+                        type="text"
+                        name="order"
+                        value=""
+                        placeholder="name" 
+                        >
+                    </form>
+                </span>
+            </li>
+            <br>
+            <li>
+                <form action="">
+                    <span>email : </span>
+                    <input 
+                    type="email"
+                    name="email"
+                    value=""
+                    placeholder="1dragon@yaho.com" 
+                    >
+            </li>
+            <br>
+            <li>
+                <form action="">
+                    <span>홈페이지 : </span>
+                    <input 
+                    type="url"
+                    name="홈페이지"
+                    value=""
+                    placeholder="http://" 
+                    >
+            </li>
+        </ol>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>주문정보</legend>
+
+        <ul>
+            <li>
+                <form action="">
+                    <span>상품명 : </span>
+                    <input type="text" name="상품평" value="">
+                </form>
+            </li>
+            <br>
+            <li>
+                <form action="">
+                    <span>주문수량 : </span>
+                    <input type="number" name="주문수량" value="" placeholder="최소 100">
+                </form>
+            </li>
+            <br>
+            <li>
+                <form action="">
+                    <span>할인율 : </span>
+                    <input type="range" name="할인율" value="" min="0" max="100" step="2">
+                </form>
+            </li>
+            <br>
+            <li>
+                <form action="">
+                    <span>요청사항 : </span>
+                    <textarea name="요청사항"></textarea>
+                </form>
+            </li>
+        </ul>
+    </fieldset>
+    <br>
+    <input type="submit" value="주문하기">
+</body>
+</html>

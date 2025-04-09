@@ -1,0 +1,27 @@
+h1 {
+    background-color: brown;
+    color: aliceblue;
+}
+
+#test01 {
+    width: 500px;
+    height: 800px;
+    font-size: 50px;
+    background-color: lightcoral;
+    border: 30px dashed brown;
+    padding: 50px;
+    /* 백그라운드 이미지 설정정 */
+    background-image: url('/resources/image/star_01.png');
+    
+    /* 반복설정 */
+    background-repeat: no-repeat;
+
+    /* 위치설정 */
+    /* background-position: center center; */
+
+    /* 이미지 크기 설정 */
+    /* background-size: 50% 50%; */
+
+    /* 배치 기준 설정 */
+    background-origin: content-box;
+}
