@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>선택자 연습</title>
+  <script defer src="./0523_practice.js"></script>
+</head>
+<body>
+  <h1 id="title">로그인 페이지</h1>
+
+  <form id="loginForm">
+    <div class="input-group">
+      <label for="userId">아이디</label>
+      <input type="text" name="userId" class="input-text" />
+    </div>
+
+    <div class="input-group">
+      <label for="userPwd">비밀번호</label>
+      <input type="password" name="userPwd" class="input-text" />
+    </div>
+
+    <div class="buttons">
+      <button type="submit" class="btn primary">로그인</button>
+      <button type="reset" class="btn secondary">초기화</button>
+    </div>
+    <!-- 
+        class 는 띄어쓰기로 구분하여 여러개를 부여할 수 있어요.
+
+        class="a b c" 
+        위와 같이 띄어쓰기로 구분하여 작성하면, 
+        해당 태그는 총 3개 클래스(a,b,c)를 가지게 됩니다.
+    -->
+  </form>
+
+  <ul class="help-list">
+    <li class="help-item">아이디 찾기</li>
+    <li class="help-item">비밀번호 찾기</li>
+    <li class="help-item">회원가입</li>
+  </ul>
+</body>
+</html>

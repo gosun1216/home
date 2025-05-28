@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07_BOM</title>
+    <script defer src="./07_BOM.js"></script>
+</head>
+<body>
+    <h1>07_ BOM (Browser Object Model)</h1>
+
+    <hr>
+
+    <h2>1. window</h2>
+    <button onclick="f01();">함수01</button>
+    <pre>
+        window 객체는 자바스크립트의 최상위 객체이며, 브라우저 내의 모든 요소들과 객체를 포함한다.
+        BOM : location 객체, navigator 객체, history 객체, screen 객체
+        DOM : document 객체
+
+        window.open();
+        window.setTimeout(함수, 시간(ms));
+        window.setInterval(함수, 시간(ms));
+    </pre>
+
+    <hr>
+
+    <h2>2. location</h2>
+    <button onclick="f02();">함수02</button>
+    <pre>
+        location.reload();
+        location.href
+        location.assign();
+        location.replace();
+    </pre>
+    
+    <hr>
+
+    <h2>3. history</h2>
+    <button onclick="f03();">함수03</button>
+    <pre>
+        history.back();
+        history.forward();
+        history.go(-1);
+        history.go(1);
+    </pre>
+
+    <hr>
+
+    <h2>4. navigator</h2>
+    <button id="btn04">함수04</button>
+    
+    <pre>
+        - 브라우저 정보를 담고있는 객체체
+    </pre>
+
+    <hr>
+
+    <h2>5. screen</h2>
+    <button id="btn05">함수05</button>
+    <pre>
+        화면 (모니터) 정보를 담고있는 객체
+    </pre>
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid yellow;
+}
+
+
+#outer {
+    width: 800px;
+    height: 800px;
+    border: 3px solid red;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+#header, #main, #footer {
+    border: 3px solid blue
+}
+
+#header {
+    height: 25%;
+    display: flex;
+    align-items: stretch;
+}
+
+#main {
+    height: 50%;
+    display: flex;
+    align-items: stretch;
+}
+
+#footer {
+    height: 25%;
+}
+
+#header > div {
+    border: 3px solid green;
+}
+
+#header > div:nth-child(1) {
+    width: 30%;
+}
+
+#header > div:nth-child(2) {
+    width: 70%;
+}
+
+#main > div {
+    border: 3px solid green;
+}
+
+.aside {
+    width: 15%;
+}
+
+.section {
+    width: 70%;
+}
+

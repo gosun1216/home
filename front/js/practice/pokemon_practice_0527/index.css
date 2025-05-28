@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: lightcyan;
+    
+}
+
+h1 {
+    color: rgb(241, 225, 0);
+}
+
+
+#contain {
+    display: flex;
+    gap: 30px;
+
+}
+.box01 {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 1fr;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgb(0, 41, 153);
+
+}
+
+.box02 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: rgb(253, 253, 253);
+    border: 2px dashed rgb(0, 41, 153);
+
+}
+
+input[type=text] {
+    width: 300px;
+    height: 20px;
+}
+
+.inputBox {
+    border: none;
+    border-bottom: 1px dashed rgb(0, 41, 153);
+}
+
+
+
+.btn01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+}
+#printPage{
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: rgb(253, 253, 253);
+      border: 2px dashed rgb(0, 41, 153);
+
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 41, 153);
+}
+
+#pokemonUl {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: baseline;
+}

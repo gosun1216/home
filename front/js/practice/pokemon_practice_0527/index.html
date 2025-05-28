@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>pokemon</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div id="header" class="box01">
+        <h1>Pokemon Center</h1>
+    </div>
+    <br><br><br><br><br>
+    <div id="contain">
+        <div id="appPoint" class="box02">
+            <br>
+            <input type="text" name="pkName" placeholder="포켓몬 이름" class="inputBox">
+            <input type="text" name="pkType" placeholder="포켓몬 타입" class="inputBox">
+            
+            <button id="add-pokemon" class="btn01" onclick="addpokemon();">추가</button>
+            <button id="enroll-pokemon" class="btn01" onclick="enrollpokemon();">등록</button>
+    
+            <button class="btn01" onclick="selectpokemon();">조회</button>
+    
+        </div>
+    
+        <div id="printPage">
+            <h4>등록된 포켓몬 리스트</h4>
+    
+            <ul id="pokemonUl">
+                
+            </ul>
+    
+        </div>
+
+    </div>
+
+</body>
+</html>

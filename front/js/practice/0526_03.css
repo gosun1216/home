@@ -1,0 +1,36 @@
+body {
+    background-color: lightgrey;
+}
+
+.card {
+    width:80px;
+    height: 110px;
+    border: 5px solid black;
+    position: relative;
+}
+
+.card > div {
+    width: 80px;
+    height: 110px;
+    transition: 0.7s;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    background-color: green;
+    position: absolute;
+}
+
+.card-back {
+    background-color: yellow;
+    transform: rotatey(180deg);
+    position: absolute;
+}
+
+.card.flip > .card-front {
+    transform: rotateY(180deg);
+}
+
+.card.flip > .card-back {
+    transform: rotateY(360deg);
+}

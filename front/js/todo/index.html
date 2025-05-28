@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>todo</title>
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <h1>TO-DO List</h1>
+
+    <hr>
+
+    <input type="text" name="content" placeholder="할 일을 입력하세요.">
+    <br>
+    <input type="text" name="manager" placeholder="담당자를 추가하세요.">
+    <br>
+    <button id="add-todo" onclick="addTodo();">추가</button>
+    <button id="enroll-todo" onclick="enrollTodo();">등록</button>
+
+    <hr>
+
+    <button onclick="selectTodo();">조회</button>
+
+    <hr>
+    <div id="todo-list">
+        <h3>담당자 / 할일</h3>
+
+    </div>
+
+</body>
+</html>
